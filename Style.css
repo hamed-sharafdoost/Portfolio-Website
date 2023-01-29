@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+* { 
+    margin :0;
+    padding :0;
+  }
+.home
+{
+    position: relative;
+    background:linear-gradient(to top,rgb(143, 126, 126),rgba(255, 255, 255, 0)),url(./2049.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    max-width: 100%;
+    height: 100vh;
+}
+.navbar
+{
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    z-index: 2;
+}
+.navbar ul
+{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+li
+{
+    padding: 20px;
+    list-style-type: none;
+}
+li a
+{
+    text-decoration: none;
+    color : white;
+    font-family: Bebas Neue;
+    font-size: 2vw;
+}
+li a:hover
+{
+    color: burlywood;
+}
+.container img
+{
+    position: relative;
+    margin-top: 5%;
+    margin-right: 8%;
+    float : right;
+    border-radius: 2000px;
+    width: 400px;
+    height: auto;
+    transition:  width 2s;
+}
+.container img:hover
+{
+    width : 500px;
+}
+.container h1
+{
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 8%;
+    color : white;
+    font-family: Aboreto,serif;
+    font-size: 50px;
+}
+.container p
+{
+    position:absolute;
+    margin-top : 17%;
+    margin-left: 8%;
+    box-sizing: content-box;
+    color : white;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 30px;
+}
+.container span
+{
+    cursor :default;
+    color :tomato;
+    text-transform: capitalize;
+    transition: font-size 2s;
+}
+.container span:hover
+{
+    color :aqua;
+    font-size: larger;
+}
+nav
+{
+    position:fixed;
+    left : 63vh;
+    padding : 40px;
+}
+nav a
+{
+    position: relative;
+    padding : 0 20px 0 20px;
+    text-decoration: none;
+    color : white;
+    font-family: Bebas Neue;
+    font-size: 30px;
+}
+nav a:hover
+{
+    color :darkkhaki;
+}
+@media only screen and (max-width : 620px)
+{
+    .container img
+    {
+        width : 200px;
+        margin-right: 25%;
+        margin-top : 77%;
+    }
+    .container h1
+    {
+        font-size: 20px;
+        margin-top : 12%;
+    }
+    .container p
+    {
+        margin-top : 19%;
+    }
+    li a
+    {
+        font-size: 5vw;
+    }
+}
